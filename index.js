@@ -1,6 +1,6 @@
 // 20 Method yang ada di JavaScript
 
-// 1. Method : fill ()
+// 1. Method : fill()
 // Kegunaan  : Untuk mengganti isi yang ada di dalam array dengan yang sudah di tentukan,
 //             Menimpa array asli yang sudah dibuat,
 //             Posisi awal dan akhir dapat kita tentukan sendiri. Jika tidak, semua elemen akan terganti.
@@ -89,4 +89,73 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday"];
 days.pop();
 // Output : Sunday,Monday,Tuesday
 
-//11. Method : charAt()
+// 11. Method : charAt()
+// Kegunaan   : Memperlihatkan posisi karakter pada index tertentu dalam sebuah string
+// Contoh :
+let text = "ANDRE ADITYA";
+let letter = text.charAt(3);
+// Output : R
+
+// 12. Method : endsWith()
+// Kegunaan   : Menampilkan nilai "true" jika string daiakhiri dengan string yang telah ditentukan
+// Contoh :
+let text = "Andre Aditya Yanwar";
+let result = text.endsWith("Yanwar");
+// Output : true
+
+// 13. Method : repeat()
+// Kegunaan   : menambahkan string dengan sejumlah salinan string
+// Contoh :
+let text = "Semangat Bootcamp !! ";
+let result = text.repeat(2);
+// Output : Semangat Bootcamp !! Semangat Bootcamp !!
+
+// 14. Method : replace()
+// Kegunaan   : Mengganti string yang ada dengan string baru
+// Contoh :
+let text = "Saya Andre";
+let result = text.replace("Andre", "Aditya");
+// Output : Saya Aditya
+
+// 15. Method : search()
+// Kegunaan   : memperlihatkan string di index keberapa dari kecocokan pertamanya
+// Contoh :
+let text = "Andre sedang melaksanakan Bootcamp";
+let position = text.search("melaksanakan");
+// Output : 13
+
+// 16. Method : split()
+// Kegunaan   : Membagi string menjadi array substring
+// Contoh :
+let text = "Saya sedang melaksanakan Bootcamp";
+const myArray = text.split(" ")
+// Output : Saya,sedang,melaksanakan,Bootcamp
+
+// 17. Method : toLowerCase()
+// Kegunaan   : Merubah string menjadi huruf kecil
+// Contoh :
+let text = "Ya BeGiNi LaH AkU aPa aDanYa";
+let result = text.toLowerCase();
+// Output : ya begini lah aku apa adanya
+
+// 18. Method : toUpperCase()
+// Kegunaan   : Merubah string menjadi huruf besar
+// Contoh :
+let text = "aKu aDaLaH AkU";
+let result = text.toUpperCase();
+// Output : AKU ADALAH AKU
+
+// 19. Method : getDate()
+// Kegunaan   : menampilkan hari dalam sebulan (1 hingga 31) dari sebuah tanggal
+// Contoh :
+const d = new Date("October 5, 2022 01:15:00");
+let day = d.getDate();
+// Output : 5
+
+// 20. Method : getDay()
+// Kegunaan   : Menampilkan hari dalam seminggu (0 hingga 6) dari suatu tanggal
+//              Minggu = 0, Senin = 1, ... (dan seterusnya)
+// Contoh :
+const d = new Date("October 5, 2022 01:15:00");
+let day = d.getDay();
+// Output : 3
